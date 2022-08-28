@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell autoresizesSubviews="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="134" id="KGk-i7-Jjw" customClass="BookTableViewCell" customModule="BooksStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUS-WN-mMx">
+                        <rect key="frame" x="250" y="32" width="62" height="17.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="xgi-lU-WTD"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="SFProRounded-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AQd-fk-hmg">
+                        <rect key="frame" x="8" y="16" width="72" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="DX1-7x-IUO"/>
+                            <constraint firstAttribute="height" constant="72" id="fYB-sN-nI1"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JnN-PT-xb4">
+                        <rect key="frame" x="88" y="24" width="142" height="35.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhy-CI-KIt">
+                                <rect key="frame" x="0.0" y="0.0" width="142" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="ORk-Nm-xQL"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="SFPro-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtk-o9-JOh">
+                                <rect key="frame" x="0.0" y="20" width="142" height="15.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="13" name="SFPro-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AQd-fk-hmg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="5gK-Qa-L4S"/>
+                    <constraint firstItem="JnN-PT-xb4" firstAttribute="leading" secondItem="AQd-fk-hmg" secondAttribute="trailing" constant="8" id="Reb-y9-n8K"/>
+                    <constraint firstItem="JnN-PT-xb4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="m4m-5B-Rye"/>
+                    <constraint firstItem="jUS-WN-mMx" firstAttribute="leading" secondItem="Lhy-CI-KIt" secondAttribute="trailing" constant="20" id="mjD-Sn-eG1"/>
+                    <constraint firstItem="jUS-WN-mMx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="pUd-N3-uxy"/>
+                    <constraint firstItem="AQd-fk-hmg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="zri-zf-mfT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.96078431610000004" green="0.96078431610000004" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="bookAuthor" destination="xtk-o9-JOh" id="Gup-Bb-9zO"/>
+                <outlet property="bookCover" destination="AQd-fk-hmg" id="I7H-2l-v8i"/>
+                <outlet property="bookPrice" destination="jUS-WN-mMx" id="zi2-Tw-vHe"/>
+                <outlet property="bookTitle" destination="Lhy-CI-KIt" id="7LS-vk-OaZ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="142.63392857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
